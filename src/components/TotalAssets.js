@@ -17,26 +17,26 @@ const formatData = (data) => {
 
 export function TotalAssets() {
   return (
-   <div>
+    <div>
       <BarChart
-      width={1000}
-      height={1000}
-      data={data}
-      margin={{
-        top: 50,
-        right: 30,
-        left: 20,
-        bottom: 50,
-      }}
-    >
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="year" />
-      <YAxis tickFormatter={formatData} />
-      <Tooltip />
-      <Legend />
-      <Bar dataKey="totalAssets" fill="#2BB48E" />
-      <Bar dataKey="totalLiabilities" fill="#337D9C" />
-    </BarChart>
+        width={1000}
+        height={1000}
+        data={data}
+        margin={{
+          top: 50,
+          right: 30,
+          left: 20,
+          bottom: 50,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="year" />
+        <YAxis tickFormatter={formatData} />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="totalAssets" fill="#2BB48E" />
+        <Bar dataKey="totalLiabilities" fill="#337D9C" />
+      </BarChart>
     </div>
   );
 }

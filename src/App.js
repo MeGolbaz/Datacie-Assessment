@@ -3,9 +3,9 @@ import { Container, Row } from "react-grid-system";
 import "./App.css";
 import { TotalAssets } from "./components/TotalAssets";
 import { Header } from "./components/Header";
-import { Footer}  from "./components/Footer";
+import { Footer } from "./components/Footer";
 import { DebtRatio } from "./components/DebtRatio";
-import { AsstsVsLiabilities} from  "./components/AsstsVsLiabilities";
+import { AssetsVsLiabilities } from "./components/AssetsVsLiabilities";
 
 function App() {
   return (
@@ -14,11 +14,10 @@ function App() {
         <Header />
       </Row>
       <Row justify="center">
-      <AsstsVsLiabilities/>
-
+        <AssetsVsLiabilities />
       </Row>
       <Row justify="center">
-      <TotalAssets />        
+        <TotalAssets />
       </Row>
       <Row justify="center">
         <DebtRatio />
