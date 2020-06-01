@@ -10,7 +10,6 @@ const formatData = (data) => {
 };
 
 export function AssetsVsLiabilities() {
-
   return (
     <div>
       <span className="TSLA">TSLA Balance Charts</span>
@@ -23,12 +22,10 @@ export function AssetsVsLiabilities() {
             top: 50, right: 30, left: 20, bottom: 50,
           }}
         >
-
-
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
           <YAxis tickFormatter={formatData} />
-          <Tooltip />
+          <Tooltip formatter={data => data.toLocaleString('US-en')} />
           <Legend />
           <Line type="monotone" dataKey="totalAssets" stroke="#2BB48E" activeDot={{ r: 8 }} />
           <Line type="monotone" dataKey="totalLiabilities" stroke="#337D9C" />

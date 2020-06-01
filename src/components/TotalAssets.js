@@ -32,7 +32,7 @@ export function TotalAssets() {
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="year" />
         <YAxis tickFormatter={formatData} />
-        <Tooltip />
+        <Tooltip formatter={data => data.toLocaleString('US-en')} />
         <Legend />
         <Bar dataKey="totalAssets" fill="#2BB48E" />
         <Bar dataKey="totalLiabilities" fill="#337D9C" />
