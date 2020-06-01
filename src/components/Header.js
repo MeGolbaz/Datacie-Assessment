@@ -6,8 +6,8 @@ export function Header() {
   return (
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
-      <p font-family={'Campton-Book'}>Translating Documents into Knowledge.</p>
-      <h4 font-family={'Campton-Book'}>Datacie, Inc.</h4>
+      <p>Translating Documents into Knowledge.</p>
+      <h4>Datacie, Inc.</h4>
     </header>
   );
 }

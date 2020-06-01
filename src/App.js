@@ -10,7 +10,7 @@ import { AsstsVsLiabilities} from  "./components/AsstsVsLiabilities";
 function App() {
   return (
     <Container fluid >
-      <Row>
+      <Row >
         <Header />
       </Row>
       <Row justify="center">
